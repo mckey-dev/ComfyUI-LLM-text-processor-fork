@@ -10,7 +10,7 @@ from pathlib import Path
 
 import comfy.model_management
 
-from .llama_binary import ensure_llama_cli_paths
+from .llama_cli_locate import ensure_llama_cli_paths
 
 
 PROMPT_ECHO_END = "... (truncated)"
