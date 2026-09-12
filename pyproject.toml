@@ -1,13 +1,17 @@
 [project]
-name = "ComfyUI-LLM-text-processor"
-description = "Process text and images with GGUF LLMs in ComfyUI using llama.cpp, including Qwen3-VL, Qwen3.5, Qwen3.6, Qwen3.7, Qwen3.8, Gemma 4, and gpt-oss."
+name = "ComfyUI-LLM-text-processor-fork"
 version = "2.0.0"
-license = {file = "LICENSE"}
-dependencies = ["numpy", "Pillow"]
+description = "Fork of ComfyUI-LLM-text-processor. Local GGUF text and image processing in ComfyUI via llama-cli, with keep_in_ram."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "Pillow",
+]
 
 [project.urls]
-Repository = "https://github.com/KingManiya/ComfyUI-LLM-text-processor"
+Repository = "https://github.com/mckey-dev/ComfyUI-LLM-text-processor-fork"
 
 [tool.comfy]
-PublisherId = "kingmaniya"
-DisplayName = "LLM Text Processor"
+DisplayName = "LLM Text Processor (fork)"

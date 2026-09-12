@@ -14,4 +14,4 @@
 - **`keep_in_ram`**: 生成後も GGUF（と選択中の mmproj）を DRAM に残し、次回の GPU ロードを速くする。既定は OFF。VRAM は毎回空く。KV キャッシュは残さない。ロック（`VirtualLock` / `mlock`）に失敗しても実行は止めない。
 - 実行時は共有ライブラリ用に `LD_LIBRARY_PATH` を付与する。
 
-ComfyUI Manager の `LLM Text Processor` は上流本体です。本フォークを使う場合はこのリポジトリと `ComfyUI-llama-cli` を `custom_nodes` に置いてください。
+ComfyUI Manager の `LLM Text Processor`（pack `comfyui-llm-text-processor`、クラス `LLMTextProcessor`）は上流本体です。このフォークは別 pack（`comfyui-llm-text-processor-fork`）・別ノード（`LLM Text Processor (fork)` / `LLMTextProcessorFork`）です。使う場合はこのリポジトリと `ComfyUI-llama-cli` を `custom_nodes` に置いてください。既存ワークフローの上流ノードは差し替えが必要です。

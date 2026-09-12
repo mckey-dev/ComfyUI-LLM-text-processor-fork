@@ -18,7 +18,7 @@ from .llama_cli import (
 from .model_ram_cache import pin_files, unpin
 
 
-class LLMTextProcessor:
+class LLMTextProcessorFork:
     @classmethod
     def INPUT_TYPES(cls):
         return {
@@ -150,8 +150,8 @@ class LLMTextProcessor:
         "llama.cpp prompt and generation speed.",
     )
     FUNCTION = "generate"
-    CATEGORY = "LLM Text Processor"
-    TITLE = "LLM Text Processor"
+    CATEGORY = "LLM Text Processor (fork)"
+    TITLE = "LLM Text Processor (fork)"
 
     @classmethod
     def VALIDATE_INPUTS(
@@ -237,5 +237,5 @@ class LLMTextProcessor:
         return (response, reasoning_text, perf)
 
 
-NODE_CLASS_MAPPINGS = {"LLMTextProcessor": LLMTextProcessor}
-NODE_DISPLAY_NAME_MAPPINGS = {"LLMTextProcessor": "LLM Text Processor"}
+NODE_CLASS_MAPPINGS = {"LLMTextProcessorFork": LLMTextProcessorFork}
+NODE_DISPLAY_NAME_MAPPINGS = {"LLMTextProcessorFork": "LLM Text Processor (fork)"}
